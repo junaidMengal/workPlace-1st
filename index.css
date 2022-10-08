@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans';
+}
+/* navbar */
+li a{
+    color: white !important;
+    margin-right:20px ;
+    font-weight: bold !important;
+
+
+}
+li a:hover{
+    text-decoration: underline;
+}
+.navbar-brand img{
+    margin-left: 20px;  
+      
+}
+.navbar-toggler-icon,.navbar-toggler{
+    background-color: white !important;
+    color: #8fc33a !important;
+}
+.dropdown-item:hover{
+background-color: #8fc33a !important;
+}
+
+/* ======home screen======= */
+
+.home{
+    background:linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6)), url(./imgs/home.jpg) center/cover no-repeat;
+    height:87vh;
+    
+}   
+
+.home-center{
+    margin: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.home-heading h1{
+    font-size: 40px;
+}
+.home-heading p{
+    text-align: center;
+    font-weight:bold;
+}
+
+.home-calculator{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.input-amount{
+    outline: none;
+    border: 2px solid black;
+    border-radius: 4px;
+    
+}
+.input-amount::placeholder{
+    padding-left: 8px;
+}
+.input-amount:focus{
+    border: 2px solid #8fc33a;
+}
+.home-calculator select{
+    padding: 5px 16px;
+    outline: none;
+    border: 2px solid #8fc33a;
+}
+.input-btn{
+    padding: 5px 12px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #8fc33a;
+    transition: all 0.32s linear;
+}
+.input-btn:hover{
+    background-color: #8fc33a;
+    color: white;
+}
+
+.home-deduction{
+  
+    width:40%;
+    margin-top: 24px;
+}
+
+.home-deduction :not(h4){
+   display: flex;
+   justify-content: space-between;
+}
+.home-deduction div{
+    margin: 20px 0;
+}
+.home-deduction input{
+    outline: none;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 130px;
+}   
+.home-deduction input::placeholder{
+    padding-left: 8px;
+}   
+@media screen and (max-width:996px){
+    .home-calculator{
+        width: 60%;
+    }
+}
+@media screen and (max-width:800px){
+    .home-heading h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .home-calculator{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 150px;
+        height: 150px;
+        margin: 6px auto;
+    }
+    .home{
+        height: auto;
+    }
+   
+}
+@media screen and (max-width:768px) {
+    .home-deduction :not(h4){
+        display:flex;
+        justify-content: center;
+
+        
+    }
+    .home-deduction h4{
+        text-align: center;
+    }
+    .deduction-name{
+        margin-right: 10px;
+    }
+    .home-deduction{
+        width:95%;
+    margin-top: 16px;
+    }
+    .home-center{
+        height: auto;
+        
+    }
+   
+
+    }
+/* =======about========= */
+.about{
+    margin: 100px 20px 40px 20px;
+}
+.about-center{
+    display:flex;
+    justify-content: center;
+}
+.about-data{
+    width: 40%;
+    padding: 30px 40px;
+    text-align: center;
+}
+.about-data i{
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #8fc33a;
+    cursor: pointer;
+}    
+.about-data h5{
+    padding-bottom: 10px;
+}   
+@media screen and (max-width:768px){
+    .about-center{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .about-data{
+        width: 60%;
+        padding: 30px 0px;
+    }
+}    
+
+/* ====tax slab====== */
+.tax-slab{
+    background-color: #f7f7f7;
+}
+.tax-center{
+    padding: 60px 40px;
+}
+.tax-title{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8fc33a;
+}
+.tax-content{
+    background-color: #efefee;
+    margin-bottom: 24px;
+   
+}
+.tax-content p{
+    padding: 12px;
+    margin: 0;
+}
+.tax-para{
+    padding-left: 8px;
+    text-decoration: none;
+    color: black;
+}
+.tax-para:hover{
+    color: black;
+}
+/* =======contact us====== */
+.contact{
+    background-color: #fff;
+    padding: 60px 40px;
+}
+.contact-title{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8fc33a;
+}
+.contact-center{
+    display: flex;
+    justify-content: center;
+     /* border: 2px solid black; */
+     background:linear-gradient(rgba(231, 231, 231, 0.4),rgba(231, 231, 231, 0.4)) ;
+}
+.contact-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.contact-data h3{
+color: #8fc33a;
+}
+.contact-content{
+    flex: 0 0 50% ;
+    background:linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6)), url(./imgs/contactus.jpg) right/60% 100% no-repeat;
+    height: 500px;    
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    height: 80%;
+    box-shadow: 3px 3px 3px;
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 20px;
+
+
+    
+}
+.contact-form input,
+.contact-form textarea{
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.contact-form input{
+    outline: none;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px 5px;
+}
+.contact-form textarea{
+    outline: none;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.contact-form button{
+    padding: 10px 0;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    background-color: #8fc33a;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    margin-left: 40px;
+}
+@media screen and (max-width:996px){
+    .contact-center{
+        display: block;
+    }
+    .contact{
+        padding: 60px 0;
+    }
+    .contact-data{
+        padding: 70px 20px;
+    }
+    .contact-data p{
+        text-align: center;
+        padding-top:20px;
+    }
+    .contact-form{
+        /* display: flex;
+        justify-content: center; */
+        /* height: 100%; */
+        /* padding-top: 30px; */
+    }
+    .contact-content{
+        display: flex;
+    }
+}
+
+/* about */
+.about-footer{
+    background-color: #8fc33a;
+    color: #fff;
+    margin: 0;
+    padding:40px ;
+
+}
+.about-footer-info h1{
+    text-align: center;
+    padding-bottom:20px ;
+}
+.about-footer-info p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* footer======== */
+.footer{
+    background-color: #efefee;
+    padding: 50px 30px;
+}
+.footer-icon{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer-icon img{
+    border-radius: 50%;
+    background-color: #8fc33a;
+}
+.footer-center p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

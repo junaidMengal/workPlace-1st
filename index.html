@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <script src="https://kit.fontawesome.com/f11c423324.js" crossorigin="anonymous"></script>
+    <title>Tax Calculator</title>
+</head>
+<body>
+    <!-- navbar -------->
+    <nav class="navbar navbar-expand-md bg-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./imgs/mycalculator logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  justify-content-end " id="navbarNav">
+            <ul class="navbar-nav   ">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Calculator
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item" href="#">Salary</a></li>
+                  <li><a class="dropdown-item" href="#">Business</a></li>
+                  <li><a class="dropdown-item" href="#">Property</a></li>
+                  <li><a class="dropdown-item" href="#">Capital Gains</a></li>
+                  <li><a class="dropdown-item" href="#">Other Sources</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tax Slabs
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item" href="#">Salary</a></li>
+                  <li><a class="dropdown-item" href="#">Business</a></li>
+                  <li><a class="dropdown-item" href="#">Property</a></li>
+                  <li><a class="dropdown-item" href="#">Capital Gains</a></li>
+                  <li><a class="dropdown-item" href="#">Other Sources</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- home screen -->
+      <div class="home">
+        <div class="home-center">
+            <div class="home-heading">
+                <h1>TAX CALCULATOR PAKISTAN 2022-2023</h1>
+                <p>This is latest tax calculator as per 2022-2023 budget presented by Government Of Pakistan.</p>
+            </div>
+            <div class="home-calculator">
+                <input type="text" placeholder="Enter Amount" class="input-amount">
+                
+                <select >
+                    <option selected >Duration</option>
+                    <option value="1">Monthly</option>
+                    <option value="2">Anually</option>
+                </select>
+                <button class="input-btn">Calculate</button>
+            </div>
+            <div class="home-deduction">
+                <h4 >Deduction Allowances</h4>
+                <div>
+                <span class="deduction-name">Zakat</span><input type="text" placeholder="Enter Amount" class="deduction-amount">
+                </div>
+                <div>
+                <span class="deduction-name">Education</span><input type="text" placeholder="Enter Amount" class="deduction-amount">
+                </div>
+                <div>
+                <span class="deduction-name">Profit on Debt</span><input type="text" placeholder="Enter Amount" class="deduction-amount">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about--- -->
+    <div class="about">
+      <div class="about-center">
+        <div class="about-data">
+
+            <i class="fa-solid fa-book-open-reader"></i>
+            <h5>Basic Concepts of Income Tax</h5>
+            <p>
+              You can find the fundamentals of income tax including taxable and none taxable sources. This brochure is to assist taxpayers from Goverment Of Pakistan.
+            </p>
+          </div>
+        <div class="about-data">
+
+          <i class="fa-solid fa-file-lines"></i>
+            <h5>Budget Document(PDF)</h5>
+            <p>
+              You can find Federal Budget in Brief 2022-23. The fiscal year 2022-23 along with budget es timates and revised estimates for the fiscal year 2022-23from Goverment Of Pakistan 
+            </p>
+          </div>
+          
+      </div>
+    </div>
+
+    <!-- ----tax slab -->
+    <div class="tax-slab">
+      <div class="tax-center">
+        <div class="tax-title">
+          <h1>Salary Tax Slabs According to Budget 2022-23</h1>
+        </div>
+        <!-- collapse 1-->
+        <div class="tax-content">
+          <p><i class="fa-solid fa-circle-plus"></i>
+            <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="tax-para">
+              Salary income is under PKR 600,000
+            </a>            
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div >
+              If the annual salary income does not exceed PKR. 600,000 then the rate of the income tax is 0%
+            </div>
+          </div>
+        </div>
+        <!-- collapse 2-->
+        <div class="tax-content">
+          <p><i class="fa-solid fa-circle-plus"></i>
+            <a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" class="tax-para">
+              Salary income exceeds PKR 600,000 but is under PKR 1.2 Million
+            </a>            
+          </p>
+          <div class="collapse" id="collapseExample2">
+            <div >
+              If the annual salary income exceeds PKR. 600,000 but does not exceed PKR. 1.2 million then the rate of income tax is 2.5% of the amount exceeding PKR. 600,000.
+            </div>
+          </div>
+        </div>
+        <!-- collapse 3-->
+        <div class="tax-content">
+          <p><i class="fa-solid fa-circle-plus"></i>
+            <a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3" class="tax-para">
+              Salary income exceeds PKR 1.2 Million but is under PKR 2.4 Million
+            </a>            
+          </p>
+          <div class="collapse" id="collapseExample3">
+            <div >
+              If the taxable annual income exceeds PKR. 1.2 million but does not exceed PKR. 2.4 million then the rate of income tax is PKR. 15,000 + 12.5% of the amount exceeding PKR. 1.2 million.
+            </div>
+          </div>
+        </div>
+        <!-- collapse 4-->
+        <div class="tax-content">
+          <p><i class="fa-solid fa-circle-plus"></i>
+            <a data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4" class="tax-para">
+              Salary income exceeds PKR 2.4 Million but is under PKR 3.6 Million
+            </a>            
+          </p>
+          <div class="collapse" id="collapseExample4">
+            <div >
+              If the annual salary income exceeds PKR. 2.4 million but does not exceed PKR. 3.6 million then the rate of income tax is flat PKR 165,000 + 20% of the amount exceeding PKR. 2.4 million
+            </div>
+          </div>
+        </div>
+        <!-- collapse 5-->
+        <div class="tax-content">
+          <p><i class="fa-solid fa-circle-plus"></i>
+            <a data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5" class="tax-para">
+              Salary income exceeds PKR 3.6 Million but is under PKR 6 Million
+            </a>            
+          </p>
+          <div class="collapse" id="collapseExample5">
+            <div >
+              If the annual salary income exceeds PKR. 3.6 million but does not exceed PKR. 6 million then the rate of income tax is flat PKR. 405,000 + 25% of the amount exceeding PKR. 3.6 million
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact us----- -->
+    <div class="contact" id="contact">
+      <div class="contact-title"><h1>Contact Us</h1></div>
+      <div class="contact-center">
+
+        <div class="contact-data">
+          <h3>Submit your tax queries?</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-form">
+            <input type="text" placeholder="Full name">
+            <input type="email" placeholder="Email Address">
+            <textarea cols="30" rows="8"> Your query?</textarea>
+            <button class="contact-btn">Ask Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about us -->
+    <div class="about-footer" id="about">
+      <div class="about-footer-info">
+        <h1>About Us</h1>
+        <p>We develop high-quality websites, apps and desktop apps. We also provide Cloud and DevOps support for your software/company. Our aim is to bring your software concept from development to cloud. We are fully agile so we present your software and take feedback from you regularly. We provide best after service support to our clients.</p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-center">
+        <div class="footer-icon">
+          <img src="./imgs/icons8-facebook-48.png" alt="">
+          <img src="./imgs/icons8-instagram-48.png" alt="">
+        </div>
+        <p>Designed and Developed by DevelopEirs © 2022 DevelopEirs</p>
+      </div>
+    </div>
+
+
+
+                   
+
+
+
+
+
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
